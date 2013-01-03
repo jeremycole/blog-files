@@ -1,0 +1,235 @@
+#<Innodb::Page::Index:0x007fc8140a9dd8>:
+
+fil header:
+{:checksum=>1909500658,
+ :offset=>3,
+ :prev=>nil,
+ :next=>nil,
+ :lsn=>301637903,
+ :type=>:INDEX,
+ :flush_lsn=>0,
+ :space_id=>6}
+
+page header:
+{:n_dir_slots=>2,
+ :heap_top=>146,
+ :n_heap=>4,
+ :free=>0,
+ :garbage=>0,
+ :last_insert=>138,
+ :direction=>:right,
+ :n_direction=>1,
+ :n_recs=>2,
+ :max_trx_id=>0,
+ :level=>2,
+ :index_id=>19,
+ :format=>:compact}
+
+fseg header:
+{:leaf=>
+  {:fseg_id=>2,
+   :not_full_n_used=>57,
+   :free=>
+    #<Innodb::List::Xdes:0x007fc8140355c8
+     @base={:length=>0, :first=>nil, :last=>nil},
+     @space=
+      #<Innodb::Space:0x007fc8140c36c0
+       @file=#<File:t.ibd>,
+       @page_size=16384,
+       @pages=3072,
+       @record_describer=Innodb::RecordDescriber::T,
+       @size=50331648>>,
+   :not_full=>
+    #<Innodb::List::Xdes:0x007fc813863750
+     @base=
+      {:length=>6,
+       :first=>{:page=>0, :offset=>1478},
+       :last=>{:page=>0, :offset=>1678}},
+     @space=
+      #<Innodb::Space:0x007fc8140c36c0
+       @file=#<File:t.ibd>,
+       @page_size=16384,
+       @pages=3072,
+       @record_describer=Innodb::RecordDescriber::T,
+       @size=50331648>>,
+   :full=>
+    #<Innodb::List::Xdes:0x007fc813861dd8
+     @base=
+      {:length=>32,
+       :first=>{:page=>0, :offset=>198},
+       :last=>{:page=>0, :offset=>1438}},
+     @space=
+      #<Innodb::Space:0x007fc8140c36c0
+       @file=#<File:t.ibd>,
+       @page_size=16384,
+       @pages=3072,
+       @record_describer=Innodb::RecordDescriber::T,
+       @size=50331648>>,
+   :magic_n=>97937874,
+   :frag_array=>
+    [4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35]},
+ :internal=>
+  {:fseg_id=>1,
+   :not_full_n_used=>0,
+   :free=>
+    #<Innodb::List::Xdes:0x007fc814182200
+     @base={:length=>0, :first=>nil, :last=>nil},
+     @space=
+      #<Innodb::Space:0x007fc8140c36c0
+       @file=#<File:t.ibd>,
+       @page_size=16384,
+       @pages=3072,
+       @record_describer=Innodb::RecordDescriber::T,
+       @size=50331648>>,
+   :not_full=>
+    #<Innodb::List::Xdes:0x007fc8141743d0
+     @base={:length=>0, :first=>nil, :last=>nil},
+     @space=
+      #<Innodb::Space:0x007fc8140c36c0
+       @file=#<File:t.ibd>,
+       @page_size=16384,
+       @pages=3072,
+       @record_describer=Innodb::RecordDescriber::T,
+       @size=50331648>>,
+   :full=>
+    #<Innodb::List::Xdes:0x007fc814168cb0
+     @base={:length=>0, :first=>nil, :last=>nil},
+     @space=
+      #<Innodb::Space:0x007fc8140c36c0
+       @file=#<File:t.ibd>,
+       @page_size=16384,
+       @pages=3072,
+       @record_describer=Innodb::RecordDescriber::T,
+       @size=50331648>>,
+   :magic_n=>97937874,
+   :frag_array=>
+    [3,
+     36,
+     37,
+     nil,
+     nil,
+     nil,
+     nil,
+     nil,
+     nil,
+     nil,
+     nil,
+     nil,
+     nil,
+     nil,
+     nil,
+     nil,
+     nil,
+     nil,
+     nil,
+     nil,
+     nil,
+     nil,
+     nil,
+     nil,
+     nil,
+     nil,
+     nil,
+     nil,
+     nil,
+     nil,
+     nil,
+     nil]}}
+
+sizes:
+  header           120
+  trailer            8
+  directory          4
+  free           16226
+  used             158
+  record            26
+  per record     13.00
+
+system records:
+{:offset=>99,
+ :header=>
+  {:next=>26,
+   :type=>:infimum,
+   :order=>0,
+   :n_owned=>1,
+   :min_rec=>false,
+   :deleted=>false},
+ :next=>125,
+ :data=>"infimum\x00"}
+{:offset=>112,
+ :header=>
+  {:next=>0,
+   :type=>:supremum,
+   :order=>1,
+   :n_owned=>3,
+   :min_rec=>false,
+   :deleted=>false},
+ :next=>112,
+ :data=>"supremum"}
+
+page directory:
+[99, 112]
+
+records:
+{:format=>:compact,
+ :offset=>125,
+ :header=>
+  {:next=>13,
+   :type=>:node_pointer,
+   :order=>2,
+   :n_owned=>0,
+   :min_rec=>true,
+   :deleted=>false,
+   :null_bitmap=>nil,
+   :variable_length=>[0]},
+ :next=>138,
+ :type=>:clustered,
+ :key=>[1225],
+ :child_page_number=>36}
+{:format=>:compact,
+ :offset=>138,
+ :header=>
+  {:next=>-26,
+   :type=>:node_pointer,
+   :order=>3,
+   :n_owned=>0,
+   :min_rec=>false,
+   :deleted=>false,
+   :null_bitmap=>nil,
+   :variable_length=>[0]},
+ :next=>112,
+ :type=>:clustered,
+ :key=>[498623],
+ :child_page_number=>37}
+
